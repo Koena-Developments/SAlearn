@@ -5,6 +5,17 @@ from .forms import LoginForm, SignupForm
 
 from django.http import HttpResponse
 
+# import logging/
+
+# logger = logging.getLogger(__name__)
+
+
+# def my_view(request):
+#     logger.debug("debug message")
+#     logger.info("debug message")
+#     logger.warning("debug message")
+#     logger.error("debug message")
+#     logger.critical("debug message")
 
 
 def hello_world(request):

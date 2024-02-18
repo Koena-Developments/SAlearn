@@ -14,7 +14,7 @@ nav
     margin: 15px;
 }
 
-.btn1
+.btn1, .btn2
 {
     background-color: #007FFF;
     color: white;
@@ -25,11 +25,13 @@ nav
     transition: border-radius 0.8s;
 }
 
+.btn2{
+    margin-top: 50px;
+}
 .right_side ul {
     list-style-type: none;
     padding: 0;
     margin-left: 15px;
-
 }
 
 .right_side ul li {
@@ -102,11 +104,31 @@ nav
     border-radius: 50%;
     background-color: #7FFF00;
 }
+.form-group
+{
+    border: 1px solid red;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my-input 
+{
+    width: 50%;
+    padding: 5px;
+    border-style: none;
+    border: 1px solid black;
+}
+label
+{
+    position: static;
+    left: 12px;
+}
 
 /* Hover effects */
 
-
-.btn1:hover
+.btn1:hover, .btn2:hover
 {
     border-radius: 5px;
     cursor: pointer;
