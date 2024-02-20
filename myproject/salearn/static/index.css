@@ -5,6 +5,7 @@ body
 }
 
 
+
 /* this is for the navigation bar */
 nav
 {
@@ -125,6 +126,16 @@ label
     position: static;
     left: 12px;
 }
+
+.banner
+{
+    position: relative;
+    width: 100px;
+    height: 50%;
+    border: 1px solid red;
+
+}
+
 
 /* Hover effects */
 
