@@ -1,0 +1,44 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <title>Nav</title>
+</head>
+<body>
+    
+    <nav>
+        <div class="right_side">
+            <ul>
+            <li>Home</li>
+            <li>About us</li>
+            <li>lectures</li>
+            <li>Donation</li>
+            <img class= "donation-img" src="{%static 'coin.png'%}" alt="">
+            <li><button class="btn1"> Join </button></li>
+            </ul>
+        </div>
+        
+        
+        
+        <div class="left_side">
+            <div class="profile_picture">
+                <img class= "profile"src="{% static 'alexandru.jpg' %}" alt="Example Image">
+                <div class="status"></div>
+            </div>
+
+            <div class="name">
+                <p>
+                    {{ name }}
+                </p>
+            </div>
+        </div>
+    </nav>
+    {%block content%}
+    {%endblock%}
+    
+</body>
+</html>

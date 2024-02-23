@@ -1,0 +1,37 @@
+{% extends 'navigation_bar.html' %}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <title>Login Page</title>
+</head>
+<body>
+
+    {% block content%}
+          
+
+        <form method="post">
+            {% csrf_token %}
+        
+            <!-- middle container -->
+
+        <div class="form-group">
+            <h2>Login</h2>
+            <label class="tag-1" for="id_username">Username:</label>
+            <input type="text" name="username" id="id_username" class="my-input">
+            <label for="id_password">Password:</label>
+            <input type="password" name="password" id="id_password" class="my-input">
+            <button type="submit" class="btn2">Login</button>
+            <div class="tabs">
+        </div>
+        </form>
+
+       
+
+        {% endblock %}
+</body>
+</html>

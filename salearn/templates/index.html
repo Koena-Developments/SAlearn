@@ -1,0 +1,34 @@
+{% extends 'navigation_bar.html' %}
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <title>SA_Home</title>
+</head>
+
+<body>
+    {%block content%}
+    <div class="container">
+    <!-- left container -->
+    <div class="arrow-left">
+        <img class="left-snap" src="{%static 'left.png'%}" alt="">
+    </div>
+
+    
+    <div class="banner">
+        <img class="banner-image" src="{%static '2.png'%}" alt="">
+    </div>
+
+    <!-- right container -->
+    <div class="arrow-right">
+        <img class="right-snap" src="{%static 'right.png'%}" alt="">
+    </div>
+    </div>
+    
+    {%endblock%}
+</body>
+</html>

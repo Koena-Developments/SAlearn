@@ -1,0 +1,220 @@
+body 
+{
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* this is for the navigation bar */
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px;
+}
+
+.btn1, .btn2
+{
+    background-color: #007FFF;
+    color: white;
+    border-style: none;
+    font-size: 17px;
+    width: 120px;
+    height: 50px;
+    transition: border-radius 0.8s;
+}
+
+.btn2{
+    margin-top: 50px;
+}
+.right_side ul {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.right_side ul li {
+    display: inline-block;
+    margin-right: 10px; 
+    position: relative;
+}
+
+.right_side ul li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #007FFF;
+    transition: width 0.3s ease;
+}
+
+.right_side ul li:not(:last-child):hover::after {
+    width: 100%;
+}
+
+.right_side .btn1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 9px;
+}
+.right_side .donation-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+.left_side {
+    border-radius: 1px solid red;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+.profile_picture
+{
+    position: relative;
+    border-color: red;
+    top: 19px;
+    left: 28px;
+    width: 100px;
+    height: 100px;
+}
+
+.donation-img
+{
+    margin-left: -7px;
+    width: 30px;
+    height: 30px;
+}
+
+.profile
+{
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.status 
+{
+    position: absolute;
+    top: 43px;
+    left: 38px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #7FFF00;
+}
+.form-group
+{
+    border: 1px solid red;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.my-input 
+{
+    width: 50%;
+    padding: 5px;
+    border-style: none;
+    border: 1px solid black;
+}
+label
+{
+    position: static;
+    left: 12px;
+}
+
+.banner
+{
+    position: relative;
+    /* left: 15%; */
+    align-items: center;
+    width: 70%;
+    height: 520px;
+    border: none;
+    border-radius: 12px;
+}
+
+.banner-image
+{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    transition: 0.8s;
+
+}
+
+.right-snap, .left-snap
+{
+    width: 30px;
+    height: 30px;
+}
+
+.left-snap
+{
+    margin-left: 70%;
+}
+
+.arrow-right,.arrow-left
+{
+    position: static;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border: none;
+    z-index: 1;
+}
+
+.arrow-right
+{
+    
+    margin-right: 80px;
+
+
+}
+.arrow-left
+{
+   
+    display: flex;
+    align-items: center ;
+    margin-left: 80px;
+
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Hover effects */
+
+.btn1:hover, .btn2:hover
+{
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.arrow-left:hover,.arrow-right:hover
+{
+    cursor: pointer;
+}
+
+.banner-image:hover
+{   
+    filter: grayscale(100%);
+}
+.right_side ul li:hover, .banner-image
+{
+    cursor: pointer;
+}
