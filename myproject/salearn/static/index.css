@@ -3,9 +3,6 @@ body
     background-color: #f0f0f0;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
 /* this is for the navigation bar */
 nav
 {
@@ -13,6 +10,7 @@ nav
     justify-content: space-between;
     align-items: center;
     margin: 15px;
+    border-style: none none solid none;
 }
 
 .btn1, .btn2
@@ -149,3 +147,4 @@ label
 {
     cursor: pointer;
 }
+
