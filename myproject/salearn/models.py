@@ -18,7 +18,7 @@ class LecturePortal(models.Model):
     pass
 
 class Video(models.Model):
-    title = models.charfield(max_length=100)
+    title = models.CharField(max_length=100)
     description = models.TextField()
     length = models.DurationField()
     video_file = models.FileField(upload_to="videos/")
